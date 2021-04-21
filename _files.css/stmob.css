@@ -1,0 +1,16 @@
+@media(max-width: 700px)
+{
+
+#ghost-window {
+	display: block;
+	width: 100%;
+	background-color: #fff;
+}
+
+#ghost-body{
+	width: 70%;
+	margin-left: 15%;
+	padding: 1% 0;
+}
+
+}
