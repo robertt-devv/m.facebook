@@ -1,0 +1,44 @@
+
+/*
+*
+*	author: roberto.deev@gmail.com © 2021 
+*
+*/
+
+@media(min-width: 701px)
+{
+
+#head-msg1{display: none;}
+#_name-ico{display: none;}
+
+
+
+#-head-msg3-text {font-size: 1.2vw;}
+#-head-msg3-text a{font-size: 1.1vw;}
+#-head-title-img{width: 19%;}
+
+#ghost-window {
+	display: block;
+	width: 40%;
+	margin-left: 30%;
+	background-color: #fff;
+}
+
+#_user-name, #_user-pass{font-size: 1vw;}
+#_pass-ico{top: 30%; right: 2%;font-size: 1vw;}
+#submit-bnt {font-size: 1.4vw;}
+#hor-row{font-size: 1.2vw;}
+#link-new-account{font-size: 1.2vw; width: 38%;}
+#link-rec-pasword{font-size: 1.2vw; width: 38%;}
+#-left-lang-options, #-right-lang-options{font-size: 1.1vw;}
+#-about{font-size: 1.2vw;}
+#more-extended a{font-size: 1.1vw;}
+#-copyr{font-size: 1.4vw;}
+}
+
+
+
+
+
+
+
