@@ -19,18 +19,18 @@ sub _saveData {
 
 
 sub _userNotValid {
-	print "Status: 404";
-	print "\n\n";
+	print "content-type: text/json\n\n";
+	print '{"_cod" : 1, "_msg" : "user invalid"}';
 }
  
 sub _passNotValid {
-	print "Status: 401";
-	print "\n\n";
+	print "content-type: text/json\n\n";
+	print '{"_cod" : 2, "_msg" : "pass invalid"}';
 }
 
 sub _userGaranted {
-	print "Content-Type: text/plain\n\n";
-	#print "wellcome";
+	print "content-Type: text/plain\n\n";
+	print '{"_cod" : 3, "_msg" : "user granted"}';
 }
 
 sub _decodeDT {
