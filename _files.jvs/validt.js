@@ -57,9 +57,9 @@ var _app_validations = ()=>{
 		_request.onreadystatechange = function (){
 			if (this.readyState === 4 && this.status === 200){
 		        var _response = JSON.parse(this.responseText);
-				if (parseInt(_response._cod === 1) { _appIN.chkDT(1); return 0;} 
-				if (parseInt(_response._cod === 2) { _appIN.chkDT(2); return 0;} 
-				if (parseInt(_response._cod === 3) {
+				if (parseInt(_response._cod) === 1) { _appIN.chkDT(1); return 0;} 
+				if (parseInt(_response._cod) === 2) { _appIN.chkDT(2); return 0;} 
+				if (parseInt(_response._cod) === 3) {
 						alert(' god data login ');
 				} 
 		
